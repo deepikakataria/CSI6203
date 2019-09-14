@@ -1,0 +1,65 @@
+// "description": "Log output to console"
+" add a shebang": {
+	"prefix": "#!",
+	"body": [
+         "#!/bin/bash"
+	],
+	"description": "Add shebang to script"
+},
+
+"Black": {
+	"prefix": "black",
+	"body": [
+		"\\033[30m"
+	],
+	"description": "black colour"
+},
+
+"Red": {
+	"prefix": "red",
+	"body": [
+		"\\033[31m"
+	],
+	"description": "red colour"
+},
+
+"Green": {
+	"prefix": "brown",
+	"body": [
+		"\\033[33m"
+	],
+	"description": "brown colour"
+},
+
+"Blue": {
+	"prefix": "blue",
+	"body": [
+		"\\033[34m"
+	],
+	"description": "blue colour"
+},
+
+"Purple": {
+	"prefix": "purple",
+	"body": [
+		"\\033[35m"
+	],
+	"description": "purple colour"
+},
+
+"Cyan": {
+	"prefix": "cyan",
+	"body": [
+		"\\033[36m"
+	],
+	"description": "cyan colour"
+},
+
+"Grey": {
+	"prefix": "grey",
+	"body": [
+		"\\033[37m"
+	],
+	"description": "grey colour"
+},
+// }

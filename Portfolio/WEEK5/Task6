@@ -1,0 +1,153 @@
+#!/bin/bash
+echo -e "\n1. Creating Directories"
+echo -e "\n2. Listing Folder"
+echo -e "\n3. Copying Folder"
+echo -e "\n4. Save Password"
+echo -e "\n5. Read Password"
+echo -e "\n6. Print Newer File"
+echo -e "\n7. Calculator"
+echo -e "\n8. Filenames"
+echo -e "\n9. Megafoldermaker"
+echo -e "\n10. Internet Downloader"
+echo -e "\n11. Print every third number till 1000
+"
+read -p " Please type any number between 1 to 11 to proceed" number
+case $number in
+1) 
+read -p "Type the name of the folder you want to create" name
+mkdir $name ;;
+# mkdir is used to make directories
+2)
+read -p "Please type the name of the folder you want to see" na
+cd /home/student/CSI6203/Portfolio/$na
+# cd command is used to change directory
+ls  
+# ls command is used to list the folder
+;;
+3)
+read -p " Please type the name of the folder you want to copy" copy
+read -p " Please type the name of the destination folder where you want to copy " destination
+cp -r $copy $destination 
+# cp command is used to copy the folder or file from source to destination
+;;
+4)
+read -p " Type a folder name: " name
+# read -p is the command used for printing and taking input from user storing it into a variable, here that variable is name.
+mkdir $name
+# mkdir is the command used for making directories.
+read -s -p "Type your secret password" pass
+# -s is the command used for hiding the sensitive data like passwords.
+echo -e " Your secret password is $pass" > secret.txt
+# echo command is used for printing.
+# -e is the escape sequences for some characters to enable.
+mv /home/student/CSI6203/Portfolio/Week3/secret.txt /home/student/CSI6203/Portfolio/Week3/$name
+# mv command is used to move folder or file from souce location to destination location
+;;
+5)
+filename="deepa.txt"
+    if [ -f "$filename" ]; then
+    cat /home/student/CSI6203/Portfolio/Week5/$filename 
+    # cat command is used to output the content of a file
+    else
+    echo "Folder does not exist"
+    exit 1
+    fi
+    ;;
+6)
+read -p "Please type the name of first file you want to compare" first
+read -p " Please type the name of the second file you want to compare" second
+read -p " Please type the nae of the third file you want to compare" third
+unset -v latest
+for file in "Week3"; 
+do 
+if [ "$first" -nt "$second" ] && [ "$first" -nt "$third" ]; then
+# -nt command is used to compare between the two that who is the newer one
+echo -e "\n $first is the newest file\n"
+elif [ "$second" -nt "$first" ] && [ "$second" -nt "$third" ]; then
+echo -e "\n $second is the newest file\n"
+elif [ "$third" -nt "$first" ] && [ "$third" -nt "$second" ]; then
+echo -e "\n $third is the newest file\n"
+fi
+done
+;;
+7)
+echo " Please enter two numbers: "
+read x
+read y
+echo " Please enter the number from the following menu: "
+echo -e " 1. Addition \n 2. Subtraction \n 3. Multiplication \n 4. Division "
+read num 
+case $num in
+1) ans=$(( x + y ))
+# + is used for addition
+echo -e "\033[34m$ans\e[0m"
+# \033[34m is a colour code of blue
+;;
+2) ans=$(( x - y ))
+# - is used for subtraction
+echo -e "\033[32m$ans\e[0m"
+# \033[32m is a colour code of green
+;;
+3) ans=$(( x * y ))
+# * is used for multiplication
+echo -e "\033[31m$ans\e[0m"
+# \033[31m is a colour code of red
+;;
+4) ans=$(( x / y ))
+# / is used for division
+echo -e "\033[35m$ans\e[0m"
+# \033[35m is a colour code of Purple
+;;
+esac
+echo "Done"
+;;
+8)
+for file in $(cat 'filenames.txt');
+# cat command is used to output the contents of a file
+do
+if [ -d "$file" ]; then
+# -d is used for all directories and for comparision we use []
+echo " $file is a directory "
+elif [ -f "$file" ]; then
+# -f is used for all normal files 
+echo " $file is a file "
+elif [  "$file" ]; then
+echo " I don't know what $file is! "
+fi
+done
+;;
+9)
+if (( $#!=2 )); then
+echo "Error, provide two numbers" && exit 1
+fi
+for (( i = $1; i <= $2; i++ ))
+do
+echo "Creating directory number $i"
+mkdir "Week$i"
+done
+;;
+10)
+ping -c1 8.8.8.8
+if [ "$?" -eq 0 ]; then
+echo "Internet seems to be connected"
+else
+echo "ERROR"
+exit 1
+fi
+read -p "Please type the URL of the website to do"
+while [ "$URL" != "exit" ]; 
+do
+wget https://www.google.co.in
+read -p "Please type the url of the website to download"
+done
+echo "Thank You"
+;;
+11)
+for (( i=1;i<=1000;i=i+3 ))
+# in this we allow a loop to run by giving it an initial value 1 and allow it to run until its value is lesser than or equal to 1000 and also we increase it after every turn by 3  
+do
+echo "$i"
+done
+;;
+esac
+exit 0

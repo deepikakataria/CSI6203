@@ -1,0 +1,16 @@
+#!/bin/bash
+ping -c1 8.8.8.8
+if [ "$?" -eq 0 ]; then
+echo "Internet seems to be connected"
+else
+echo "ERROR"
+exit 1
+fi
+read -p "Please type the URL of the website to do"
+while [ "$URL" != "exit" ]; 
+do
+wget https://www.google.co.in
+read -p "Please type the url of the website to download"
+done
+echo "Thank You"
+exit 0

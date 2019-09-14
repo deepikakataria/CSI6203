@@ -1,0 +1,6 @@
+#!/bin/bash
+read -p "type the name of the folder you want to create" name
+# read -p is used to print output and take input from the user and save it into the variable
+mv /home/student/CSI6203/foldercopier.sh /home/student/CSI6203/Portfolio/Week3/$name
+# mv command is used to move any folder or file from source folder to destination folder
+exit 0

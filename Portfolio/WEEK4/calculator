@@ -1,0 +1,31 @@
+#!/bin/bash
+echo " Please enter two numbers: "
+read x
+read y
+echo " Please enter the number from the following menu: "
+echo -e " 1. Addition \n 2. Subtraction \n 3. Multiplication \n 4. Division "
+read num 
+case $num in
+1) ans=$(( x + y ))
+# + is used for addition
+echo -e "\033[34m$ans\e[0m"
+# \033[34m is a colour code of blue
+;;
+2) ans=$(( x - y ))
+# - is used for subtraction
+echo -e "\033[32m$ans\e[0m"
+# \033[32m is a colour code of green
+;;
+3) ans=$(( x * y ))
+# * is used for multiplication
+echo -e "\033[31m$ans\e[0m"
+# \033[31m is a colour code of red
+;;
+4) ans=$(( x / y ))
+# / is used for division
+echo -e "\033[35m$ans\e[0m"
+# \033[35m is a colour code of Purple
+;;
+esac
+echo "Done"
+exit 0

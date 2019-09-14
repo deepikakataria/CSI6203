@@ -1,0 +1,13 @@
+
+#!/bin/bash
+filename="Secret.txt" 
+    if [ -f "$filename" ]; then
+    cat  /home/student/CSI6203/Portfolio/Week3/$filename 
+    # cat command is used to output the contents of a file.
+    else
+    echo "Folder does not exist"
+    exit 1
+    fi
+
+echo 'Done'
+exit 0
