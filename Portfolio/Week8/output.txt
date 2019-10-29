@@ -1,0 +1,11 @@
+	\033[31mERROR:\033[0m $1
+this is the start of the script
+Thank you!
+Thank you!
+	[ $REPLY -lt 42 ] &&  Too Low 
+	[ $REPLY -gt 42 ] &&  Too High 
+	[ $REPLY -eq 42 ] &&  Correct! 
+this is the start of the guessing game
+Thank you!
+	\033[31mERROR:\033[0m $VAR1
+base: $i height: $j area: $a

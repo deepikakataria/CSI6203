@@ -1,0 +1,7 @@
+#!/bin/bash
+grep -r "sed"
+grep -r "^m"
+grep -r '[0-9][0-9]'
+grep -r "^[aeiou]"
+grep -r "for"
+grep -r "echo

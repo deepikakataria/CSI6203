@@ -1,0 +1,48 @@
+Oct 27 13:17:01 csi6203 CRON[28502]: pam_unix(cron:session): session opened for user root by (uid=0)
+Oct 27 13:17:01 csi6203 CRON[28502]: pam_unix(cron:session): session closed for user root
+Oct 27 13:30:01 csi6203 CRON[28813]: pam_unix(cron:session): session opened for user root by (uid=0)
+Oct 27 13:30:02 csi6203 CRON[28813]: pam_unix(cron:session): session closed for user root
+Oct 27 14:17:01 csi6203 CRON[29218]: pam_unix(cron:session): session opened for user root by (uid=0)
+Oct 27 14:17:01 csi6203 CRON[29218]: pam_unix(cron:session): session closed for user root
+Oct 27 14:30:01 csi6203 CRON[29260]: pam_unix(cron:session): session opened for user root by (uid=0)
+Oct 27 14:30:01 csi6203 CRON[29260]: pam_unix(cron:session): session closed for user root
+Oct 27 15:17:01 csi6203 CRON[29318]: pam_unix(cron:session): session opened for user root by (uid=0)
+Oct 27 15:17:01 csi6203 CRON[29318]: pam_unix(cron:session): session closed for user root
+Oct 27 15:30:01 csi6203 CRON[29346]: pam_unix(cron:session): session opened for user root by (uid=0)
+Oct 27 15:30:01 csi6203 CRON[29346]: pam_unix(cron:session): session closed for user root
+Oct 27 16:17:01 csi6203 CRON[29664]: pam_unix(cron:session): session opened for user root by (uid=0)
+Oct 27 16:17:01 csi6203 CRON[29664]: pam_unix(cron:session): session closed for user root
+Oct 27 16:30:01 csi6203 CRON[29698]: pam_unix(cron:session): session opened for user root by (uid=0)
+Oct 27 16:30:01 csi6203 CRON[29698]: pam_unix(cron:session): session closed for user root
+Oct 27 17:17:01 csi6203 CRON[29791]: pam_unix(cron:session): session opened for user root by (uid=0)
+Oct 27 17:17:01 csi6203 CRON[29791]: pam_unix(cron:session): session closed for user root
+Oct 27 17:30:01 csi6203 CRON[29818]: pam_unix(cron:session): session opened for user root by (uid=0)
+Oct 27 17:30:01 csi6203 CRON[29818]: pam_unix(cron:session): session closed for user root
+Oct 27 18:17:01 csi6203 CRON[29904]: pam_unix(cron:session): session opened for user root by (uid=0)
+Oct 27 18:17:01 csi6203 CRON[29904]: pam_unix(cron:session): session closed for user root
+Oct 27 18:30:01 csi6203 CRON[29965]: pam_unix(cron:session): session opened for user root by (uid=0)
+Oct 27 18:30:01 csi6203 CRON[29965]: pam_unix(cron:session): session closed for user root
+Oct 27 19:17:01 csi6203 CRON[30376]: pam_unix(cron:session): session opened for user root by (uid=0)
+Oct 27 19:17:01 csi6203 CRON[30376]: pam_unix(cron:session): session closed for user root
+Oct 27 19:30:01 csi6203 CRON[30469]: pam_unix(cron:session): session opened for user root by (uid=0)
+Oct 27 19:30:01 csi6203 CRON[30469]: pam_unix(cron:session): session closed for user root
+Oct 27 20:17:01 csi6203 CRON[30909]: pam_unix(cron:session): session opened for user root by (uid=0)
+Oct 27 20:17:01 csi6203 CRON[30909]: pam_unix(cron:session): session closed for user root
+Oct 27 20:30:02 csi6203 CRON[30948]: pam_unix(cron:session): session opened for user root by (uid=0)
+Oct 27 20:30:02 csi6203 CRON[30948]: pam_unix(cron:session): session closed for user root
+Oct 28 05:17:01 csi6203 CRON[32243]: pam_unix(cron:session): session opened for user root by (uid=0)
+Oct 28 05:17:01 csi6203 CRON[32243]: pam_unix(cron:session): session closed for user root
+Oct 28 06:17:01 csi6203 CRON[32619]: pam_unix(cron:session): session opened for user root by (uid=0)
+Oct 28 06:17:01 csi6203 CRON[32619]: pam_unix(cron:session): session closed for user root
+Oct 28 06:25:01 csi6203 CRON[32651]: pam_unix(cron:session): session opened for user root by (uid=0)
+Oct 28 06:25:02 csi6203 CRON[32651]: pam_unix(cron:session): session closed for user root
+Oct 28 07:17:01 csi6203 CRON[32914]: pam_unix(cron:session): session opened for user root by (uid=0)
+Oct 28 07:17:01 csi6203 CRON[32914]: pam_unix(cron:session): session closed for user root
+Oct 28 07:30:01 csi6203 CRON[32999]: pam_unix(cron:session): session opened for user root by (uid=0)
+Oct 28 07:30:01 csi6203 CRON[32999]: pam_unix(cron:session): session closed for user root
+Oct 28 16:30:04 csi6203 CRON[33256]: pam_unix(cron:session): session opened for user root by (uid=0)
+Oct 28 16:30:04 csi6203 CRON[33256]: pam_unix(cron:session): session closed for user root
+Oct 28 17:17:01 csi6203 CRON[33463]: pam_unix(cron:session): session opened for user root by (uid=0)
+Oct 28 17:17:01 csi6203 CRON[33463]: pam_unix(cron:session): session closed for user root
+Oct 28 17:30:01 csi6203 CRON[33510]: pam_unix(cron:session): session opened for user root by (uid=0)
+Oct 28 17:30:01 csi6203 CRON[33510]: pam_unix(cron:session): session closed for user root
