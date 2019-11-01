@@ -1,5 +1,4 @@
 #!/bin/bash
-
 #This function prints a given error
 printError()
 {
